@@ -1,12 +1,9 @@
 /** @jsxImportSource @emotion/react */
 
-import { useState } from 'react';
 import { css } from '@emotion/react';
 import { background } from './assets/images/images';
 
 function App() {
-  const [hover, setHover] = useState(false);
-
   return (
     <main
       css={css`
@@ -38,7 +35,6 @@ function App() {
           points="400,400 600,500 800,450 500,400 1000,300 100,100 400,400"
           stroke="green"
           strokeWidth={'10px'}
-          fill={hover ? 'none' : 'transparent'}
           css={css`
             position: absolute;
             top: 0;
